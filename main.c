@@ -17,8 +17,9 @@ int main()
     //simulation de PI : 3.144760
     //Pour n = 1 000 000 000
     //simulation de PI : 3.141546
-    moyenne_sim_pi(1000000000, 10)
+    //moyenne_sim_pi(1000000000, 10);
     //Pour n = 1 000 000 000
     //simulation de 10 PI : 3.141563
+    moyenne_sim_pi_conf(1000000000, 30);
     return 0;
 }
