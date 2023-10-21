@@ -25,7 +25,8 @@ _\ | | | | | | | |_| | | (_| | |_| | (_) | | | | | (_| |  __/
   / _` |/ _ \  / __/ _ \| '_ \| |_| |/ _` | '_ \ / __/ _ \    
  | (_| |  __/ | (_| (_) | | | |  _| | (_| | | | | (_|  __/    
   \__,_|\___|  \___\___/|_| |_|_| |_|\__,_|_| |_|\___\___|    
-                                                              
+
+http://patorjk.com/software/taag/                                                       
 */
 
 
@@ -48,12 +49,26 @@ int main()
     //simulation de PI : 3.144760
     //Pour n = 1 000 000 000
     //simulation de PI : 3.141546
-    //moyenne_sim_pi(1000000000, 10);
+
+
+    //moyenne_sim_pi(1000000000, 10, 0.05);
     //Pour n = 1 000 000 000
     //simulation de 10 PI : 3.141563
 
-    //moyenne_sim_pi_conf(1000000000, 30);
+
+    // moyenne_sim_pi_conf(1000, 30, 0.05);
+    // moyenne de 30 PI : 3.1397333333, intervalle de confiance a 95% [3.1230125548, 3.1564541118]
+    // moyenne_sim_pi_conf(1000000, 30, 0.05);
+    // moyenne de 30 PI : 3.1411472000, intervalle de confiance a 95% [3.1405342225, 3.1417601775]
+    //moyenne_sim_pi_conf(1000000000, 30, 0.05);
     // Pour n = 1 000 000 000
     // moyenne de 30 PI : 3.1415843373, intervalle de confiance á 95% [3.1415649339, 3.1416037408]
+
+    // moyenne_sim_pi_conf(1000, 30, 0.01);
+    // moyenne de 30 PI : 3.1397333333, intervalle de confiance a 99% [3.1172151449, 3.1622515218]
+    // moyenne_sim_pi_conf(1000000, 30, 0.01);
+    // moyenne de 30 PI : 3.1411472000, intervalle de confiance a 99% [3.1403216916, 3.1419727084]
+    // moyenne_sim_pi_conf(1000000000, 30, 0.01);
+    // moyenne de 30 PI : 3.1415843373, intervalle de confiance a 99% [3.1415582064, 3.1416104683]
     return 0;
 }

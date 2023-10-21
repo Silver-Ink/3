@@ -8,7 +8,7 @@
 
 double sim_pi(unsigned long n);
 double moyenne_sim_pi(unsigned long n, int nb_exp);
-double moyenne_sim_pi_conf(unsigned long n, int nb_exp);
+double moyenne_sim_pi_conf(unsigned long n, int nb_exp, float alpha);
 
 
 
