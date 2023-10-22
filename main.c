@@ -77,7 +77,7 @@ int main()
     // moyenne_sim_pi_conf(1000, 60, 0.05);
     // moyenne de 60 PI : 3.1422666667, intervalle de confiance a 95% [3.1294156853, 3.1551176480]
     // moyenne_sim_pi_conf(1000000, 60, 0.05);
-    // moyenne de 60 PI : 3.1409808000, intervalle de confiance a 95% [3.1405372495, 3.1414243505]
+    // moyenne de 60 PI : 3.1418199333, intervalle de confiance a 95% [3.1413984598, 3.1422414068]
     // moyenne_sim_pi_conf(1000000000, 60, 0.05);
     // moyenne de 60 PI : 3.1415861654, intervalle de confiance a 95% [3.1415726300, 3.1415997008]
 
