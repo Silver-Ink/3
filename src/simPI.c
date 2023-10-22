@@ -36,7 +36,7 @@ double moyenne_sim_pi(unsigned long n, int nb_exp)
     }
     
     double moyenne = somme_exp / (double)nb_exp;
-    printf("moyenne de %d PI : %1.10f\n", nb_exp, moyenne);
+    printf("moyenne de %d PI : %1.10f, erreur : %1.10f\n", nb_exp, moyenne, moyenne / M_PI);
     return moyenne;
 
 }

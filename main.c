@@ -51,16 +51,19 @@ int main()
     //simulation de PI : 3.141546
 
 
-    //moyenne_sim_pi(1000000000, 10, 0.05);
-    //Pour n = 1 000 000 000
-    //simulation de 10 PI : 3.141563
+    // moyenne_sim_pi(1000, 10);
+    // moyenne de 10 PI : 3.1480000000, erreur : 1.0020395217
+    // moyenne_sim_pi(1000000, 10);
+    // moyenne de 10 PI : 3.1412544000, erreur : 0.9998923305
+    // moyenne_sim_pi(1000000000, 10);
+    // moyenne de 10 PI : 3.1415643560, erreur : 0.9999909926
 
 
     // moyenne_sim_pi_conf(1000, 30, 0.05);
     // moyenne de 30 PI : 3.1397333333, intervalle de confiance a 95% [3.1230125548, 3.1564541118]
     // moyenne_sim_pi_conf(1000000, 30, 0.05);
     // moyenne de 30 PI : 3.1411472000, intervalle de confiance a 95% [3.1405342225, 3.1417601775]
-    //moyenne_sim_pi_conf(1000000000, 30, 0.05);
+    // moyenne_sim_pi_conf(1000000000, 30, 0.05);
     // Pour n = 1 000 000 000
     // moyenne de 30 PI : 3.1415843373, intervalle de confiance á 95% [3.1415649339, 3.1416037408]
 
@@ -70,5 +73,19 @@ int main()
     // moyenne de 30 PI : 3.1411472000, intervalle de confiance a 99% [3.1403216916, 3.1419727084]
     // moyenne_sim_pi_conf(1000000000, 30, 0.01);
     // moyenne de 30 PI : 3.1415843373, intervalle de confiance a 99% [3.1415582064, 3.1416104683]
+
+    // moyenne_sim_pi_conf(1000, 60, 0.05);
+    // moyenne de 60 PI : 3.1422666667, intervalle de confiance a 95% [3.1294156853, 3.1551176480]
+    // moyenne_sim_pi_conf(1000000, 60, 0.05);
+    // moyenne de 60 PI : 3.1409808000, intervalle de confiance a 95% [3.1405372495, 3.1414243505]
+    // moyenne_sim_pi_conf(1000000000, 60, 0.05);
+    // moyenne de 60 PI : 3.1415861654, intervalle de confiance a 95% [3.1415726300, 3.1415997008]
+
+    // moyenne_sim_pi_conf(1000, 60, 0.01);
+    // moyenne de 60 PI : 3.1422666667, intervalle de confiance a 99% [3.1251748615, 3.1593584718]
+    // moyenne_sim_pi_conf(1000000, 60, 0.01);
+    // moyenne de 60 PI : 3.1409808000, intervalle de confiance a 99% [3.1403908778, 3.1415707222]
+    // moyenne_sim_pi_conf(1000000000, 60, 0.01);
+    // moyenne de 60 PI : 3.1415861654, intervalle de confiance a 99% [3.1415681633, 3.1416041675]
     return 0;
 }
