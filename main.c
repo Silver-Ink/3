@@ -26,7 +26,7 @@ _\ | | | | | | | |_| | | (_| | |_| | (_) | | | | | (_| |  __/
  | (_| |  __/ | (_| (_) | | | |  _| | (_| | | | | (_|  __/    
   \__,_|\___|  \___\___/|_| |_|_| |_|\__,_|_| |_|\___\___|    
 
-http://patorjk.com/software/taag/                                                       
+patorjk.com/software/taag/#p=display&f=Ogre                                                     
 */
 
 
@@ -87,5 +87,7 @@ int main()
     // moyenne de 60 PI : 3.1409808000, intervalle de confiance a 99% [3.1403908778, 3.1415707222]
     // moyenne_sim_pi_conf(1000000000, 60, 0.01);
     // moyenne de 60 PI : 3.1415861654, intervalle de confiance a 99% [3.1415681633, 3.1416041675]
+
+    prompt_pi();
     return 0;
 }

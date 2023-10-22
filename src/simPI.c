@@ -97,3 +97,33 @@ double moyenne_sim_pi_conf(unsigned long n, int nb_exp, float alpha)
     free(resultats);
     return moyenne;
 }
+
+/// @brief Demande tous les paramètres pour une simulation de PI et affiche tous les résultats dans la console
+/// @return Valeur moyenne de PI calculée
+double prompt_pi()
+{
+    float alpha = 0;
+    int alpha_choix = 0;
+    int nb_lances = 0;
+    int nb_exp = 2;
+
+    printf("Nombre de lances par simulation : ");
+    scanf("%d%*c", &nb_lances);
+    printf("Nombre de simulations (2 min et par tranches de 10) : ");
+    scanf("%d%*c", &nb_exp);
+    while (alpha_choix != 1 && alpha_choix != 2)
+    {
+        printf("Intervalle de confiance à :\n[1] 95 %% \n[2] 99 %%\n -->");
+        scanf("%d%*c", &alpha_choix);
+    }
+    if (alpha_choix == 1)
+    {
+        alpha = 0.05;
+    }
+    else
+    {
+        alpha = 0.01;
+    }
+    printf("Moyenne de %d simulations de PI a %d lances de points ...\n", nb_exp, nb_lances);
+    return moyenne_sim_pi_conf(nb_lances, nb_exp, alpha);
+}
